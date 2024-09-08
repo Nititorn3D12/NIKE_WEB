@@ -1,0 +1,32 @@
+/* src/styles/Footer.css */
+.footer {
+  background-color: #dcdbdb; /* สีพื้นหลังของแถบข้างล่าง */
+  color: #000; /* สีข้อความ */
+  text-align: center; /* จัดข้อความไว้ตรงกลาง */
+  padding: 10px; /* ลด padding */
+  border-top: 1px solid #ddd; /* เพิ่มกรอบด้านบน */
+  font-size: 14px; /* ขนาดฟอนต์ของข้อความในฟุตเตอร์ */
+  box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.1); /* เพิ่มเงาเบาๆ ให้ฟุตเตอร์ */
+  font-family: 'Arial', sans-serif; /* ใช้ฟอนต์ที่ดูทันสมัย */
+}
+
+.footer-content {
+  font-size: 14px; /* ขนาดฟอนต์ของข้อความในฟุตเตอร์ */
+  margin: 5px 0;
+}
+
+.social-icons {
+  margin: 10px 0; /* ลดระยะห่าง */
+}
+
+.social-icons a {
+  margin: 0 8px; /* ลดระยะห่างระหว่างไอคอน */
+  color: #000; /* เปลี่ยนสีของไอคอนเป็นดำ */
+  text-decoration: none; /* เอาเส้นขีดใต้ลิงก์ออก */
+  font-size: 18px; /* ขนาดของไอคอน */
+  transition: color 0.3s ease; /* เพิ่มเอฟเฟกต์เมื่อ hover */
+}
+
+.social-icons a:hover {
+  color: #444; /* เปลี่ยนสีเมื่อ hover */
+}

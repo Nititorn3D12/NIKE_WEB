@@ -1,0 +1,55 @@
+/* จัดการสไตล์ทั่วไปของหน้ารายการโปรด */
+.favorite-container {
+  padding: 20px;
+  text-align: center;
+}
+
+/* จัดการสไตล์สำหรับรายการรองเท้า */
+.shoe-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px; /* เพิ่มช่องว่างระหว่างรายการเล็กน้อย */
+  justify-content: center;
+}
+
+.shoe-item {
+  position: relative;
+  border: 1px solid #ddd;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  flex: 1 1 calc(25% - 30px); /* ปรับขนาดให้มี 4 รายการต่อแถว */
+  max-width: 220px; /* ลดความกว้างสูงสุดของแต่ละรายการ */
+  text-align: center;
+}
+
+/* จัดการตำแหน่งไอคอนถังขยะ */
+.trash-icon {
+  position: absolute;
+  top: 20px; /* ขยับลงจากขอบบน 10px */
+  right: 10px; /* ขยับเข้าขวา 10px */
+  font-size: 20px; /* ขนาดของไอคอน */
+  color: black;
+  cursor: pointer;
+}
+
+
+.shoe-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  max-height: 150px; /* ลดความสูงของภาพ */
+}
+
+.shoe-name {
+  font-size: 0.9em; /* ลดขนาดฟอนต์ */
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.shoe-price {
+  margin-top: 5px;
+  font-size: 0.8em; /* ลดขนาดฟอนต์ */
+}

@@ -1,0 +1,121 @@
+.background-wrapper {
+  position: absolute; /* Take up the whole viewport */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('http://localhost:3000/assets/images/1.jpg') no-repeat center center fixed; /* Background image for the whole page */
+  background-size: cover; /* Ensure the background covers the entire area */
+  opacity: 0.75; /* Adjust as needed (0.0 to 1.0) */
+}
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url('http://localhost:3000/assets/images/1.jpg') no-repeat center center fixed; /* Background image for the whole page */
+  opacity: 0.75; /* Adjust as needed (0.0 to 1.0) */
+  background-size: cover; /* Ensure the background covers the entire area */
+}
+
+/* Style for the login box */
+.login-box {
+  width: 400px;
+  padding: 20px;
+  background-color: #ffffff; /* พื้นหลังสีขาว */
+  border: 1px solid #ffffff; /* กรอบเป็นสีขาว */
+  border-radius: 12px; /* มุมโค้งมน */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* เงาเบา */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* การเปลี่ยนแปลงที่ราบรื่น */
+}
+
+/* Hover effect for login box */
+.login-box:hover {
+  transform: translateY(-5px); /* ยกขึ้นเล็กน้อยเมื่อชี้เมาส์ */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* เงาลึกขึ้นเมื่อชี้เมาส์ */
+}
+
+/* Style for the heading */
+h1 {
+  text-align: center;
+  color: #333; /* สีเทาเข้มสำหรับข้อความ */
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+/* Style for form groups */
+form div {
+  margin-bottom: 15px;
+}
+
+/* Style for labels */
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333; /* สีเทาเข้มสำหรับป้าย */
+}
+
+/* Style for input fields */
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd; /* กรอบสีเทาอ่อนสำหรับฟิลด์ */
+  border-radius: 6px;
+  background-color: #f9f9f9; /* พื้นหลังสีเทาอ่อนสำหรับฟิลด์ */
+  color: #333; /* สีเทาเข้มสำหรับข้อความ */
+  box-sizing: border-box;
+}
+
+/* Style for buttons */
+button {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ddd; /* กรอบสีเทาอ่อน */
+  border-radius: 50px; /* มุมโค้งมน */
+  background-color: #007bff; /* สีพื้นหลังของปุ่ม */
+  color: #ffffff; /* สีข้อความของปุ่ม */
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* การเปลี่ยนแปลงที่ราบรื่น */
+}
+
+/* Hover effect for buttons */
+button:hover {
+  background-color: #0056b3; /* สีพื้นหลังของปุ่มเมื่อชี้เมาส์ */
+  color: #ffffff; /* สีข้อความของปุ่มเมื่อชี้เมาส์ */
+  border-color: #0056b3; /* สีกรอบของปุ่มเมื่อชี้เมาส์ */
+}
+
+/* Style for the forgot password link */
+.forgot-password-link {
+  text-align: right;
+  margin-top: 10px;
+}
+
+.forgot-password-link a {
+  color: #007bff; /* สีฟ้าสำหรับลิงก์ */
+  text-decoration: none;
+}
+
+.forgot-password-link a:hover {
+  text-decoration: underline;
+}
+
+/* Style for the sign up link */
+.signup-link {
+  text-align: center;
+  margin-top: 15px;
+  color: #333; /* สีเทาเข้มสำหรับข้อความ */
+}
+
+.signup-link a {
+  color: #007bff; /* สีฟ้าสำหรับลิงก์ */
+  text-decoration: none;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}

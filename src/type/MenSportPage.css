@@ -1,0 +1,261 @@
+/* การจัดสไตล์ให้กับหัวเรื่อง */
+header h3 {
+    margin: 0;
+    padding: 50px 0;
+    text-align: center;
+    color: black;
+    font-size: 24px; /* ขนาดข้อความ */
+}
+
+/* คอนเทนเนอร์หลักสำหรับเนื้อหาหลักและตัวกรอง */
+.main-container {
+    display: flex; /* ใช้ flexbox สำหรับการจัดเลย์เอาต์ */
+    flex-direction: column; /* จัดเรียงรายการในแนวตั้ง */
+    align-items: center; /* จัดตำแหน่งรายการให้ตรงกลาง */
+    padding: 20px; /* เพิ่มระยะห่างภายในคอนเทนเนอร์ */
+    position: relative; /* เปิดใช้งานการจัดตำแหน่ง */
+}
+
+/* คอนเทนเนอร์สำหรับตัวกรองดรอปดาวน์และป้าย */
+.filter-container {
+    margin-bottom: 1.5rem; /* ระยะห่างด้านล่างของคอนเทนเนอร์กรอง */
+    display: flex; /* ใช้ flexbox สำหรับการจัดตำแหน่ง */
+    gap: 1rem; /* ระยะห่างระหว่างป้ายและดรอปดาวน์ */
+    width: 100%; /* ความกว้างเต็มของคอนเทนเนอร์ */
+}
+
+/* ป้ายด้านบนของดรอปดาวน์ */
+.filter-label {
+    margin-right: 0.5rem; /* ระยะห่างระหว่างป้ายและดรอปดาวน์ */
+    font-size: 1em; /* ขนาดฟอนต์ของป้าย */
+}
+
+/* สไตล์ของดรอปดาวน์ */
+.filter-dropdown {
+    padding: 0.5rem; /* ระยะห่างภายในดรอปดาวน์ */
+    font-size: 1em; /* ขนาดฟอนต์ของดรอปดาวน์ */
+    background-color: #ffffff; /* สีพื้นหลังขาว */
+    color: #000000; /* สีข้อความดำ */
+    border: 1px solid #747474; /* สีขอบเทาเข้ม */
+    border-radius: 4px; /* มุมมน */
+    cursor: pointer; /* แสดงเคอร์เซอร์เป็นรูปมือเมื่อชี้ที่ดรอปดาวน์ */
+}
+
+/* สไตล์ของรายการรองเท้า */
+.shoe-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* ช่องว่างระหว่างแต่ละรายการ */
+    justify-content: center;
+}
+
+.shoe-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* กระจายเนื้อหาภายในให้มีพื้นที่ว่างระหว่าง */
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    flex: 1 1 calc(25% - 20px);
+    max-width: 300px;
+    box-sizing: border-box;
+    margin: 10px;
+    position: relative;
+    height: 100%; /* ให้ทุก container มีความสูงเท่ากัน */
+}
+
+/* ขยายภาพเมื่อชี้ */
+.shoe-item:hover .shoe-image {
+    transform: scale(1.1); /* ขยายภาพเป็น 110% ของขนาดเดิม */
+}
+
+/* สไตล์ของเนื้อหาภายในแต่ละรายการ */
+.shoe-info {
+    flex-grow: 1; /* ให้พื้นที่ที่เหลือถูกครอบครองโดยข้อมูลสินค้า */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* ปุ่มจะอยู่ด้านล่างสุด */
+    width: 100%;
+    margin-top: 5px; /* ลดระยะห่างระหว่างภาพและข้อความ */
+}
+
+.shoe-name {
+    margin: 0; /* ลบระยะขอบตามค่าเริ่มต้น */
+    font-size: 1em; /* ขนาดฟอนต์ */
+    font-weight: bold; /* ทำให้ข้อความหนา */
+}
+
+.shoe-price {
+    margin: 5px 0 0 0; /* ระยะห่างด้านบนของราคา */
+    font-size: 0.9em; /* ขนาดฟอนต์ */
+}
+
+/* สไตล์ของปุ่ม */
+.add-to-cart-btn,
+.order-button {
+    background-color: #000000; /* พื้นหลังสีดำ */
+    color: #fff; /* ข้อความสีขาว */
+    border: none; /* ลบขอบตามค่าเริ่มต้น */
+    padding: 10px 20px; /* เพิ่มระยะห่าง */
+    font-size: 1em; /* ขนาดฟอนต์ของข้อความในปุ่ม */
+    cursor: pointer; /* เปลี่ยนเคอร์เซอร์เป็นรูปมือ */
+    border-radius: 5px; /* มุมมนของปุ่ม */
+    margin-top: 10px; /* เพิ่มระยะห่างด้านบนของปุ่ม */
+    text-align: center; /* จัดข้อความในปุ่มให้ตรงกลาง */
+    transition: background-color 0.3s ease; /* การเปลี่ยนแปลงสีพื้นหลัง */
+}
+
+/* สีพื้นหลังของปุ่มเมื่อชี้ */
+.add-to-cart-btn:hover,
+.order-button:hover {
+    background-color: #005700; /* เปลี่ยนเป็นสีเขียวเข้มกว่าเมื่อชี้ */
+}
+
+/* สีพื้นหลังของปุ่มเมื่อไม่สามารถใช้งานได้ */
+.order-button:disabled {
+    background-color: #ccc; /* พื้นหลังสีเทาสำหรับสถานะที่ไม่สามารถใช้งานได้ */
+    cursor: not-allowed; /* เปลี่ยนเคอร์เซอร์เป็นไม่อนุญาต */
+    opacity: 0.5; /* ลดความทึบสำหรับสถานะที่ไม่สามารถใช้งานได้ */
+}
+
+/* สไตล์ของเลเยอร์สำหรับโมดัล */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* สไตล์ของเนื้อหาของโมดัล */
+.modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+}
+
+/* ปุ่มปิดโมดัล */
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* ภาพในโมดัล */
+.modal-image {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* การเลือกขนาด */
+.size-selection {
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* จัดรายการให้ตรงกลางในแนวนอน */
+}
+
+.size-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* ระยะห่างระหว่างกล่อง */
+    justify-content: center;
+}
+
+.size-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px; /* ความกว้างของกล่อง */
+    height: 60px; /* ความสูงของกล่อง */
+    background-color: #f1f1f1; /* สีพื้นหลังเทาอ่อน */
+    border: 1px solid #ddd; /* สีขอบ */
+    border-radius: 5px; /* มุมมนของกล่อง */
+    font-size: 0.9em; /* ขนาดฟอนต์ของตัวเลือกขนาด */
+    cursor: pointer; /* เปลี่ยนเคอร์เซอร์เป็นรูปมือ */
+    transition: background-color 0.3s ease; /* การเปลี่ยนแปลงสีพื้นหลัง */
+}
+
+/* สีพื้นหลังของกล่องเมื่อชี้ */
+.size-box:hover {
+    background-color: #ddd; /* สีเทาเข้มขึ้นเมื่อชี้ */
+}
+
+
+
+/* สไตล์ของปุ่มลบ (Trash Icon) */
+.trash-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: black;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+/* สีเมื่อไอคอนถังขยะถูกชี้ */
+.trash-icon:hover {
+    color: #e74c3c; /* เปลี่ยนสีเป็นแดงเมื่อชี้ */
+}
+/* สไตล์ของปุ่มสั่งซื้อสินค้า */
+.add-to-cart {
+    background-color: #000000; /* พื้นหลังสีดำ */
+    color: #fff; /* ข้อความสีขาว */
+    border: none; /* ลบขอบตามค่าเริ่มต้น */
+    padding: 10px 20px; /* เพิ่มระยะห่าง */
+    font-size: 1em; /* ขนาดฟอนต์ของข้อความในปุ่ม */
+    cursor: pointer; /* เปลี่ยนเคอร์เซอร์เป็นรูปมือ */
+    border-radius: 5px; /* มุมมนของปุ่ม */
+    margin-top: 10px; /* เพิ่มระยะห่างด้านบนของปุ่ม */
+    text-align: center; /* จัดข้อความในปุ่มให้ตรงกลาง */
+    transition: background-color 0.3s ease; /* การเปลี่ยนแปลงสีพื้นหลัง */
+}
+
+.add-to-cart:hover {
+    background-color: #333333; /* เปลี่ยนเป็นสีเทาเข้มเมื่อชี้ */
+}
+/* สไตล์ของไอคอนหัวใจ */
+/* สไตล์ของไอคอนหัวใจ */
+.favorite-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.3s ease; /* การเปลี่ยนแปลงสีเมื่อชี้ */
+}
+
+/* สไตล์เมื่อไอคอนหัวใจเป็นสีดำ (ไม่คลิก) */
+.favorite-icon:not(.active) {
+    color: black; /* สีของหัวใจเมื่อไม่ใช้งาน */
+}
+
+/* สไตล์เมื่อไอคอนหัวใจเป็นสีแดง (คลิก) */
+.favorite-icon.active {
+    color: red; /* สีของหัวใจเมื่อใช้งาน */
+}

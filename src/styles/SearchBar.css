@@ -1,0 +1,26 @@
+/* src/components/SearchBar.css */
+.search-bar {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-bar input {
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  .search-bar button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #555; /* ปรับสีพื้นหลังปุ่มตามที่ต้องการ */
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .search-bar button:hover {
+    background-color: #777; /* ปรับสีเมื่อเลื่อนเมาส์ไปที่ปุ่ม */
+  }
+  

@@ -1,0 +1,153 @@
+    /* Style for the navigation container */
+    nav {
+        background-color: #ffffff;
+        color: #000000;
+        padding: 10px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
+        border-bottom: 2px solid #e0e0e0;
+    }
+
+    /* Style for the logo link container */
+.logo-link {
+    display: flex;
+    justify-content: center; /* จัดให้อยู่ตรงกลางแนวนอน */
+    align-items: center; /* จัดให้อยู่ตรงกลางแนวตั้ง */
+    flex-grow: 10; /* ขยายให้เต็มพื้นที่ที่เหลือ */
+    text-align: center; /* จัดข้อความให้อยู่กลาง */
+}
+
+/* Style for the logo text */
+.logo-text {
+    font-size: 150px; /* ขนาดตัวอักษร */
+    font-weight: bold; /* ตัวหนา */
+    text-decoration: underline; /* ขีดเส้นใต้ */
+    color: #000000; /* สีของข้อความ */
+    cursor: pointer; /* เปลี่ยนเคอร์เซอร์เป็นมือเมื่อชี้ที่ข้อความ */
+    line-height: 1.8.1; /* ความสูงของบรรทัด */
+    text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+    padding: 10px; /* ระยะห่างภายในกรอบ */
+    border: 2px solid #ff0000; /* กรอบสีดำ */
+    border-radius: 10px; /* ทำมุมกรอบมน */
+    margin-left: 100px; /* ขยับโลโก้ไปทางขวาเล็กน้อย */
+    display: inline-block; /* ให้ขนาดกรอบครอบข้อความ */
+}
+
+
+    /* Style for the navigation links container */
+    .nav-links {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* Style for the links on the left side */
+    .nav-links-left {
+        display: flex;
+        align-items: center;
+        margin-right: auto;
+        padding-left: 20px;
+    }
+
+    /* Style for navigation links */
+    .nav-links a {
+        color: #000000;
+        text-decoration: none;
+        padding: 10px;
+        font-family: 'Roboto', sans-serif;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        transition: border-color 0.3s, background-color 0.3s;
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-links a i {
+        margin-right: 8px; /* ระยะห่างระหว่างไอคอนและข้อความ */
+    }
+
+    .nav-links a:hover {
+        background-color: #575757;
+        border-color: #d4d4d4;
+    }
+
+    /* Style for separator line between links */
+    .separator {
+        border-left: 1px solid #e0e0e0; /* เส้นกั้น */
+        height: 20px; /* ความสูงของเส้นกั้น */
+        margin: 0 15px; /* ระยะห่างระหว่างเส้นกั้นและลิงก์ */
+    }
+
+    /* Style for the links on the right side */
+    .nav-links-right {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        padding-right: 15px;
+        margin-right: 20px;
+    }
+
+    /* Style for dropdown menus */
+    .nav-dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .nav-dropdown .dropdown-menu {
+        display: none;
+        position: absolute;
+        background-color: #000000;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.2);
+        z-index: 1;
+        border: 1px solid #333;
+        border-radius: 4px;
+    }
+
+    .nav-dropdown .dropdown-menu a {
+        color: #fff;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .nav-dropdown .dropdown-menu a:hover {
+        background-color: #575757;
+    }
+
+    .nav-dropdown:hover .dropdown-menu {
+        display: block;
+    }
+
+    /* Style for separate dropdown menus */
+    .nav-dropdown-men {
+        margin-right: 10px;
+    }
+
+    .nav-dropdown-women {
+        margin-right: 10px;
+    }
+
+    /* Style for cart link */
+    .cart-link {
+        font-size: 24px; /* ขนาดของอีโมจิรถเข็น */
+        padding-left: 10px;
+        font-family: 'Roboto', sans-serif;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        transition: border-color 0.3s;
+    }
+
+    .cart-link:hover {
+        border-color: #d4d4d4;
+    }

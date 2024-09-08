@@ -1,0 +1,205 @@
+.product-info h- {
+  color: rgb(255, 0, 0); /* สีของชื่อผลิตภัณฑ์ */
+  margin-top: 0; /* กำหนดระยะห่างด้านบน */
+}
+
+.price {
+  font-size: 24px; /* ขนาดตัวอักษรของราคา */
+  margin-top: 10px; /* ระยะห่างด้านบนจากรูปภาพ */
+}
+
+.product-detail-container {
+  display: flex;
+  justify-content: center; /* จัดให้อยู่กลางแนวนอน */
+  align-items: center; /* จัดให้อยู่กลางแนวตั้ง */
+  margin-top: 20px; /* ระยะห่างด้านบน */
+  text-align: center; /* จัดข้อความให้อยู่กลาง */
+}
+
+.product-image-container {
+  display: flex;
+  justify-content: center; /* จัดรูปภาพให้อยู่กลางแนวนอน */
+  align-items: center; /* จัดรูปภาพให้อยู่กลางแนวตั้ง */
+  margin-right: 20px; /* ระยะห่างด้านขวาของรูปภาพ */
+  gap: 20px; /* ระยะห่างระหว่างรูปภาพใหญ่และรูปภาพเล็ก */
+}
+
+.product-info {
+  flex: 1;
+  max-width: 400px; /* ขนาดสูงสุดของกล่องข้อมูลสินค้า */
+  margin-top: 50px; /* เพิ่มระยะห่างด้านบนจากส่วนหัว */
+  margin-bottom: 40px; /* ระยะห่างด้านล่างจากข้อมูลสินค้าไปยังฟุตเตอร์ */
+  padding: 70px; /* เพิ่มระยะห่างภายใน */
+  border: 1px solid #ddd; /* เส้นขอบของกล่องข้อมูลสินค้า */
+  border-radius: 3px; /* มุมมน */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* เงา */
+  background-color: #fff; /* สีพื้นหลังของกล่องข้อมูลสินค้า */
+}
+
+.product-image-container {
+  display: flex;
+  justify-content: center; /* จัดรูปภาพให้อยู่กลางแนวนอน */
+  align-items: center; /* จัดรูปภาพให้อยู่กลางแนวตั้ง */
+  margin-right: 20px; /* ระยะห่างด้านขวาของรูปภาพ */
+  gap: 20px; /* ระยะห่างระหว่างรูปภาพใหญ่และรูปภาพเล็ก */
+  margin-bottom: 20px; /* เพิ่มระยะห่างด้านล่างของรูปภาพใหญ่ */
+}
+
+.product-image {
+  max-width: 400px; /* ขนาดสูงสุดของรูปภาพสินค้า */
+  height: auto; /* ปรับความสูงอัตโนมัติ */
+  border: 1px solid #ddd; /* เส้นขอบของรูปภาพ */
+  margin-bottom: 10px; /* ขยับรูปภาพใหญ่ขึ้นเล็กน้อย */
+}
+
+.additional-images {
+  display: flex;
+  flex-direction: column; /* แสดงรูปภาพเล็กในแนวตั้ง */
+  align-items: center; /* จัดให้รูปภาพเล็กอยู่กลางแนวนอน */
+  margin-top: -10px; /* ขยับรูปภาพเล็กขึ้นเล็กน้อย */
+}
+
+.additional-image {
+  width: 80px; /* ขนาดความกว้างของรูปภาพเล็ก */
+  height: auto; /* ปรับความสูงอัตโนมัติ */
+  border: 1px solid #ddd; /* เส้นขอบของรูปภาพเล็ก */
+  margin-bottom: 10px; /* ระยะห่างด้านล่างของรูปภาพเล็ก */
+  cursor: pointer; /* เปลี่ยนเคอร์เซอร์เมื่อวางเมาส์ */
+  transition: transform 0.3s; /* การเปลี่ยนแปลงขนาดเมื่อวางเมาส์ */
+}
+
+.product-details {
+  margin-top: 20px; /* ระยะห่างด้านบนของข้อความรายละเอียดสินค้า */
+  text-align: center; /* จัดข้อความให้อยู่กลาง */
+}
+
+
+.additional-image:hover {
+  transform: scale(1.1); /* ขยายขนาดเมื่อวางเมาส์ */
+}
+
+.size-options {
+  display: flex;
+  flex-wrap: nowrap; /* แสดงตัวเลือกขนาดในแนวเดียว */
+  gap: 10px; /* ระยะห่างระหว่างตัวเลือกขนาด */
+  justify-content: center; /* จัดให้อยู่กลางแนวนอน */
+  margin-top: 10px; /* ระยะห่างด้านบนของตัวเลือกขนาด */
+}
+
+.size-box {
+  display: flex;
+  align-items: center; /* จัดให้ตัวเลือกขนาดอยู่กลางแนวตั้ง */
+  justify-content: center; /* จัดให้ตัวเลือกขนาดอยู่กลางแนวนอน */
+  width: 40px; /* ความกว้างของตัวเลือกขนาด */
+  height: 40px; /* ความสูงของตัวเลือกขนาด */
+  background-color: #f0f0f0; /* สีพื้นหลังของตัวเลือกขนาด */
+  border: 1px solid #ddd; /* เส้นขอบของตัวเลือกขนาด */
+  border-radius: 5px; /* มุมมน */
+  cursor: pointer; /* เปลี่ยนเคอร์เซอร์เมื่อวางเมาส์ */
+  font-size: 14px; /* ขนาดตัวอักษร */
+  transition: background-color 0.3s, border-color 0.3s; /* การเปลี่ยนแปลงสีเมื่อวางเมาส์ */
+}
+
+.size-box input {
+  display: none; /* ซ่อน input ของตัวเลือกขนาด */
+}
+
+.size-box:hover {
+  background-color: #ddd; /* สีพื้นหลังเมื่อวางเมาส์ */
+  border-color: #aaa; /* สีเส้นขอบเมื่อวางเมาส์ */
+}
+
+.size-box.selected {
+  background-color: #333; /* สีพื้นหลังเมื่อเลือก */
+  color: white; /* สีตัวอักษรเมื่อเลือก */
+  border-color: #333; /* สีเส้นขอบเมื่อเลือก */
+}
+
+.quantity-button {
+  width: 30px; /* ความกว้างของปุ่มเพิ่ม/ลด */
+  height: 30px; /* ความสูงของปุ่มเพิ่ม/ลด */
+  background-color: black; /* สีพื้นหลังของปุ่มเพิ่ม/ลด */
+  color: white; /* สีตัวอักษรของปุ่มเพิ่ม/ลด */
+  border: none; /* ไม่มีเส้นขอบ */
+  border-radius: 50%; /* รูปทรงปุ่มเป็นวงกลม */
+  font-size: 18px; /* ขนาดตัวอักษร */
+  cursor: pointer; /* เปลี่ยนเคอร์เซอร์เมื่อวางเมาส์ */
+  margin: 0 5px; /* ระยะห่างด้านข้าง */
+  align-items: center; /* จัดให้อยู่กลางแนวตั้ง */
+  
+}
+
+.quantity-button:hover {
+  background-color: #333; /* สีพื้นหลังเมื่อวางเมาส์ */
+}
+
+.quantity-display {
+  font-size: 18px; /* ขนาดตัวอักษรของจำนวน */
+}
+
+.order-button, .buy-now-button {
+  background-color: #007bff; /* สีพื้นหลังเริ่มต้นของปุ่ม */
+  color: white; /* สีตัวอักษรของปุ่ม */
+  border: none; /* ไม่มีเส้นขอบ */
+  border-radius: 5px; /* มุมมน */
+  font-size: 14px; /* ขนาดตัวอักษร */
+  padding: 8px 16px; /* ขนาดของปุ่ม */
+  cursor: pointer; /* เปลี่ยนเคอร์เซอร์เมื่อวางเมาส์ */
+  margin-top: 10px; /* ระยะห่างด้านบน */
+  margin-bottom: 20px; /* ระยะห่างด้านล่าง */
+  transition: background-color 0.3s, transform 0.3s; /* การเปลี่ยนแปลงสีและขนาดเมื่อวางเมาส์ */
+}
+
+.order-button:hover, .buy-now-button:hover {
+  transform: scale(1.05); /* ขยายขนาดเมื่อวางเมาส์ */
+}
+
+.order-button {
+  background-color: #000000; /* สีพื้นหลังสำหรับปุ่ม Add to Cart */
+}
+
+.order-button:hover {
+  background-color: #303030; /* สีพื้นหลังเมื่อวางเมาส์สำหรับปุ่ม Add to Cart */
+}
+
+.buy-now-button {
+  background-color: #ffffff; /* สีพื้นหลังสำหรับปุ่ม Buy Now */
+  color: black; /* สีข้อความของปุ่ม Buy Now */
+  border: 1px solid black; /* เส้นกรอบสีดำ */
+}
+
+.buy-now-button:hover {
+  background-color: #464646; /* สีพื้นหลังเมื่อวางเมาส์สำหรับปุ่ม Buy Now */
+  color: white; /* สีข้อความของปุ่ม Buy Now เมื่อวางเมาส์ */
+  border-color: white; /* สีเส้นกรอบเมื่อวางเมาส์ */
+}
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  z-index: 1000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+
+.popup-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.popup-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.popup button {
+  margin-top: 10px;
+}

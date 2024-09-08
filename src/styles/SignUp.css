@@ -1,0 +1,99 @@
+/* Container for centering the sign-up form */
+.sign-up-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.sign-up-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('http://localhost:3000/assets/images/1.jpg') no-repeat center center fixed;
+  background-size: cover;
+  opacity: 0.5; /* Adjust as needed (0.0 to 1.0) */
+  z-index: -1; /* Ensure the image is behind */
+}
+
+/* Container for the sign-up form */
+.sign-up-container {
+  max-width: 450px;
+  width: 100%;
+  padding: 30px;
+  background-color: #ffffff; /* White background */
+  border: 1px solid #999; /* Thinner border */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Darker shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect for sign-up container */
+.sign-up-container:hover {
+  transform: translateY(-5px); /* Slight lift effect */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+}
+
+/* Form group styling */
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* Label styling */
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Input fields styling */
+input[type="email"],
+input[type="password"],
+input[type="checkbox"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #ffffff; /* Ensure white background for inputs */
+}
+
+/* Styling for input fields with errors */
+input-error {
+  border-color: red; /* Red border for errors */
+}
+
+/* Error message styling */
+.error {
+  color: red;
+  font-size: 0.875em;
+  margin-top: 5px;
+  display: block;
+}
+
+/* Password requirements styling */
+.password-requirements {
+  margin-top: 20px;
+  font-size: 0.875em;
+  color: #555;
+}
+
+/* Button styling */
+button {
+  background-color: #007bff; /* Button background color */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: #0056b3; /* Darker background on hover */
+}
